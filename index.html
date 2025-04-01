@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website verplaatst</title>
+    <title>Website Verplaatst</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 50px;
-            background-color: #f9f9f9;
+            margin: 0;
+            background-color: #f0f7f4;
             color: #333;
+        }
+        .header {
+            background: url('https://example.com/banner-image.jpg') no-repeat center;
+            background-size: cover;
+            height: 200px;
         }
         .container {
             max-width: 600px;
-            margin: auto;
+            margin: 50px auto;
             padding: 30px;
             background: white;
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: #d9534f;
+            color: #26734d;
         }
         .countdown {
             font-size: 24px;
@@ -32,7 +37,7 @@
             display: inline-block;
             margin-top: 20px;
             padding: 12px 18px;
-            background-color: #007bff;
+            background-color: #26734d;
             color: white;
             font-size: 16px;
             text-decoration: none;
@@ -40,12 +45,7 @@
             transition: background 0.3s;
         }
         .redirect-link:hover {
-            background-color: #0056b3;
-        }
-        .info {
-            font-size: 18px;
-            margin-top: 15px;
-            line-height: 1.5;
+            background-color: #1a5033;
         }
     </style>
     <script>
@@ -64,15 +64,16 @@
     </script>
 </head>
 <body>
+    <div class="header"></div>
     <div class="container">
         <h2>We zijn verhuisd!</h2>
-        <p class="info">
+        <p>
             De website <strong>GegevensKnooppuntGroningen.nl</strong> is verhuisd naar een nieuw domein.<br>
             U wordt automatisch doorgestuurd naar 
             <a href="https://dataspacegroningen.nl">DataSpace Groningen</a> in 
             <span class="countdown" id="countdown">10</span> seconden.
         </p>
-        <p class="info">Als u niet wilt wachten, klik dan op de knop hieronder:</p>
+        <p>Als u niet wilt wachten, klik dan op de knop hieronder:</p>
         <a class="redirect-link" href="https://dataspacegroningen.nl" aria-label="Direct naar DataSpace Groningen">Ga nu naar DataSpace Groningen</a>
     </div>
 </body>
