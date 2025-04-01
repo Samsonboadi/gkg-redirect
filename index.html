@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Moved</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .countdown {
+            font-size: 22px;
+            font-weight: bold;
+            color: #d9534f;
+        }
+        .redirect-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .redirect-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        let seconds = 10;
+        function countdown() {
+            if (seconds > 0) {
+                document.getElementById('countdown').innerText = seconds;
+                seconds--;
+                setTimeout(countdown, 1000);
+            } else {
+                window.location.href = "https://dsg.nl";
+            }
+        }
+        window.onload = countdown;
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>We've Moved!</h2>
+        <p>
+            The website <strong>GKG.nl</strong> has moved to a new domain.<br>
+            You will be redirected to <a href="https://dsg.nl">DSG.nl</a> in <span class="countdown" id="countdown">10</span> seconds.
+        </p>
+        <p>If you don't want to wait, click the button below:</p>
+        <a class="redirect-link" href="https://dsg.nl">Go to DSG.nl now</a>
+    </div>
+</body>
+</html>
